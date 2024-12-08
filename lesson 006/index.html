@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 006 Проект "Альфа"</title>
+
+    <style>
+        body,
+        html {
+            font-size: 16px;
+            font-weight: 400;
+            color: black;
+            background-color: #fff;
+
+        }
+
+        h1 {
+            color: gray;
+            background-color: aliceblue;
+        }
+
+        h2 {
+            background-color: #fe71713d;
+            color: black;
+        }
+
+        .header_logo {
+            height: 80px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            background-color: rgba(161, 151, 151, 0.253);
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: #f2fb517e;
+            border: 2px solid black;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        tbody {
+            background-color: #3235e9b0;
+        }
+
+        td {
+            border-top: 1px solid black;
+        }
+
+        footer {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header_title">Проект "Єнотік"</h1>
+        <img class="header_logo" src="https://www.dniprotoday.com/zdjecia/2077/main-compressed.jpg"
+            alt="зображення єнота.">
+    </header>
+
+    <aside class="aside">
+        <nav class="nav">
+            <h2 class="nav_title"> Навігація</h2>
+            <ul class="nav_ul">
+                <li class="nav_li"> <a class="nav_link" href="#project" title="перейти до опису проєкту">Опис
+                        проєкту</a></li>
+                <li class="nav_li"> <a class="nav_link" href="#team" title="перейти до складу та опису команди">Команда.
+                        Опис команди.</a> </li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <main class="main">
+        <section class="project" id="project">
+            <h2 class="project_title">Опис проєкту</h2>
+            <article class="project_description">
+                Цей проєкт має на меті створення інноваційної платформи для розвитку бізнесу за допомогою новітніх
+                технологій. Ми прагнемо забезпечити ефективні рішення для наших користувачів, спрощуючи процеси та
+                підвищуючи результативність.
+            </article>
+            <h2 class="project_title">Функції проєкту</h2>
+            <ol class="project_list">
+                <li class="project_li"><b>Автоматизація бізнес-процесів для зменшення витрат</b> і підвищення
+                    ефективності.</li>
+                <li class="project_li"><b>Створення інтегрованих аналітичних інструментів</b> для прийняття
+                    обґрунтованих рішень. </li>
+                <li class="project_li"><b>Розробка мобільного додатку </b> для швидкого доступу до даних і управлінських
+                    функцій. </li>
+                <li class="project_li"> <b>Забезпечення високого рівня безпеки</b> для захисту даних користувачів.</li>
+            </ol>
+        </section>
+
+        <section class="team" id="team">
+            <h2 class="team_title">Опис команди</h2>
+            <p class="team_description">Наша команда складається з професіоналів з різних галузей, які працюють разом
+                для досягнення успіху проєкту. Ми об'єднані спільною метою — створити інноваційне і корисне рішення для
+                наших користувачів.</p>
+
+            <table class="team_table" border="2">
+                <thead class="team_thead">
+                    <td class="team_td">ім'я
+                    </td>
+                    <td class="team_td">посада
+                    </td>
+                    <td class="team_td">опис
+                    </td>
+                </thead>
+                <tbody class="team_tbody">
+                    <tr class="team_tr">
+                        <td class="team_td">Іван</td>
+                        <td class="team_td">Менеджер проєкт</td>
+                        <td class="team_td">Iван відповідає за загальне управління проєктом і координацію роботи
+                            команди.</td>
+                    </tr>
+                    <tr class="team_tr">
+                        <td class="team_td">Олена Петренко</td>
+                        <td class="team_td">Розробник</td>
+                        <td class="team_td">Олена займається програмуванням і розробкою основних функцій проєкту.</td>
+                    </tr>
+                    <tr class="team_tr">
+                        <td class="team_td">Катерина Дорошенко</td>
+                        <td class="team_td">Дизайнер</td>
+                        <td class="team_td">Катерина працює над дизайном інтерфейсу користувача та створенням візуальних
+                            матеріалів для проєкту.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        Команда "Єнотік" 2024.
+    </footer>
+
+</body>
+
+</html>
