@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Passion One';
+    font-size: 100%;
+    font-size: 20px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 'Passion One';
+    font-weight: 400;
+}
+
+/*--------------------*/
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.header_title {
+    color: #0691d7;
+}
+
+.recipe_summary {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe_summary_item {
+    flex: 1 1 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.recipe_summary_icon img {
+    height: 50px;
+}
+
+.recipe_summary p {
+    color: #f4b41a;
+    font-size: 24px;
+}
+
+.components {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.components_photo {
+    flex: 1 1 50%;
+}
+
+.components_content {
+    flex: 1 1 50%;
+}
+
+.components_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.components_table th,
+.components_table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.components_table th {
+    background-color: #f4b41a;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.components_table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.components_table tbody tr:hover {
+    background-color: #f1c40f;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+
+.recipe {}
+
+.recipe_title {
+    color: #0691d7;
+}
+
+.recipe_ul {
+    list-style-type: circle;
+    padding-left: 40px;
+    margin: 20px 0;
+}
+
+.recipe_li {
+    list-style-type: inherit;
+    margin-top: 5px;
+}
+
+.footer {
+    padding-top: 20px;
+    border-top: 1px solid black;
+}
