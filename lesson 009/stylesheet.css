@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Passion One';
+    font-size: 100%;
+    font-size: 20px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 'Passion One';
+    font-weight: 400;
+}
+
+h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* ============================================= */
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.header {
+    text-align: center;
+}
+
+/* ============================================= */
+
+.blocks>div {
+    border: 1px solid black;
+    margin-top: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocks_1 {
+    width: 160px;
+    background-color: #a40000;
+    color: blue;
+
+}
+
+#block_2 {
+    width: 250px;
+    height: 125px;
+    background-color: blue;
+}
+
+.blocks div:nth-of-type(3) {
+    width: 180px;
+    background-color: aqua;
+}
+
+div[title] {
+    width: 100px;
+    border-radius: 50px;
+    background-color: #1e1d1d7f;
+
+}
+
+/* ============================================= */
+
+.registration {}
+
+.registration_title {}
+
+.registration_conteiner {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.registration_form {}
+
+.registration_form_item label {
+    font-size: 14px;
+    color: #232324;
+}
+
+.registration_form_item input {
+    border-bottom: 1px solid rgb(110, 110, 110);
+    width: 100%;
+    font-size: 16px;
+
+}
+
+.registration_form_item input:hover {
+    border-bottom: 1px solid rgb(72, 1, 224);
+}
+
+.registration_form_item input:focus {
+    border-bottom: 1px solid rgb(72, 1, 224);
+    box-shadow: 0px 5px 10px rgb(81, 89, 250);
+}
+
+
+.registration_form_buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.registration_form_buttons button {
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registration_form_submit {
+    background-color: #5804ff;
+    color: rgb(217, 215, 215);
+}
+
+.registration_form_reset {
+    background-color: yellow;
+    color: rgb(84, 84, 84);
+}
+
+.registration_form_submit:hover,
+.registration_form_submit:focus {
+    background-color: rgb(81, 89, 250);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px rgb(81, 89, 250);
+}
+
+.registration_form_reset:hover,
+.registration_form_reset:focus {
+    background-color: rgb(249, 249, 19);
+    box-shadow: 0px 5px 10px rgb(255, 255, 29);
+    color: black;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* ============================================= */
+
+.navigation {}
+
+.navigation_title {}
+
+.navigation_nav {}
+
+.navigation_ul {}
+
+.navigation_li {
+    height: 30px;
+}
+
+.navigation_li::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid black;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.navigation_link {
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+}
+
+.navigation_link:hover,
+.navigation_link:focus {
+    color: black;
+    font-size: 22px;
+}
+
+.navigation_link:active {
+    font-size: 24px;
+    color: black;
+}
+
+
+/* ============================================= */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f4b41a;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #f1c40f;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+
+/* ============================================= */
+
+.title {
+    font-size: 36px;
+    color: blue;
+}
+
+.subtitle {
+    color: burlywood;
+}
+
+.conteiner p:first-child {
+    color: blue;
+}
+
+.conteiner p:nth-child(1) {
+    font-size: 12px;
+}
+
+.text:hover {
+    text-decoration: line-through;
+    color: yellowgreen !important;
+}
+
+.subtext {
+    color: red;
+}
+
+
+.subtext:hover,
+.subtitle:focus {
+    color: blue;
+    font-size: 26px;
+}
