@@ -1,0 +1,13 @@
+h1 {
+    font-size: 36px;
+    color: darkblue;
+}
+
+p {
+    font-size: 24px;
+    color: darkcyan;
+    font-family: "Playwrite VN Guides", cursive;
+    text-align: center;
+    line-height: 2;
+    text-transform: uppercase;
+}
