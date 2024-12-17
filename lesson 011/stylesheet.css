@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "myFont";
+    src: url('fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-size: 24px;
+    background-color: #dedede;
+}
+
+h1 {
+    font-family: "Montserrat Underline", "myFont", sans-serif;
+    color: blue;
+    background-color: #f39999;
+    font-style: italic;
+}
+
+h2,
+p:first-of-type {
+    font-family: 'myFont', sans-serif;
+    ;
+    font-weight: bold;
+    color: rgb(4, 189, 250);
+
+}
