@@ -1,0 +1,60 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Passion One';
+    font-size: 100%;
+    font-size: 20px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+
+.container {
+    height: 100%;
+    background-image: linear-gradient(to bottom right,
+            #52fa55,
+            rgb(255, 255, 87));
+}
+
+.image img {
+    height: 300px;
+    box-shadow: 5px 5px 20px hwb(256 0% 0%);
+}
+
+.text {
+    background-image: radial-gradient(rgb(107, 179, 66), rgb(51, 255, 0));
+    box-shadow: 10px 10px 50px rgb(30, 0, 255);
+}
+
+.text:hover {
+    background-image: radial-gradient(rgb(30, 0, 255), rgb(100, 221, 255));
+    box-shadow: 10px 10px 50px rgb(255, 166, 0);
+}
+
+@keyframes myAnimation {
+    0% {
+        background: linear-gradient(to bottom right,
+                red,
+                blue)
+    }
+
+    50% {
+        background: linear-gradient(to bottom right,
+                blue,
+                red)
+    }
+
+    100% {
+        background: linear-gradient(to bottom right,
+                red,
+                blue)
+    }
+}
+
+.animation {
+    height: 300px;
+    animation: myAnimation 2s infinite ease;
+}
