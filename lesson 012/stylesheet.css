@@ -1,0 +1,52 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Passion One';
+    font-size: 100%;
+    font-size: 20px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+.contаiner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom right,
+            #130292,
+            rgb(119, 78, 160));
+}
+
+.element {
+    padding: 50px;
+    border: 1px solid #f6ff00;
+}
+
+
+.element {
+    padding: 50px;
+    color: black;
+}
+
+.element:first-child {
+    background-color: hwb(0 0% 0%);
+}
+
+.element:nth-child(2) {
+    background-color: rgba(00, 255, 00, 0.5);
+    box-shadow: 5px 5px 20px yellowgreen;
+}
+
+.element:last-child {
+    background-color: hsla(259, 100%, 42%);
+}
+
+.element:last-child {
+    background-image: linear-gradient(to top left,
+            yellow,
+            yellowgreen);
+}
