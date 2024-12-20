@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Passion One';
+    font-size: 18px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* ============================================= */
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: url(images/background.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    /* background-image: linear-gradient(to right bottom, rgb(255, 191, 63), white); */
+}
+
+.header {
+    background-color: #ffffff8c;
+    box-shadow: 5px 2px 20px rgb(0, 0, 0);
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+/*------------------------------*/
+[class*=__container] {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    background-color: #ffffffd8;
+    box-shadow: 10px 10px 20px rgb(63, 63, 63);
+}
+
+
+/*------------------------------*/
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.header_logo {}
+
+.header_nav {}
+
+.header_ul {}
+
+.header_li {}
+
+.header_link:hover,
+.header_link:focus {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+/*------------------------------*/
+
+.info {
+    margin-top: 20px;
+}
+
+.info__container {
+    text-align: left;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 70px;
+    border: 1px solid rgb(112, 112, 112);
+
+}
+
+.info_text {}
+
+.info_button {
+    position: absolute;
+    right: 10%;
+    bottom: 10px;
+    padding: 10px 15px;
+    background-color: red;
+    color: black;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.info_button:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/funny_cat.png);
+    top: -20px;
+    right: -20px;
+    background-size: contain;
+}
+
+
+.info_button:hover,
+.info_button:focus {
+    background-color: rgb(250, 50, 50);
+    color: white;
+    box-shadow: 2px 2px 10px red;
+}
+
+
+.sprites {
+    margin-top: 30px;
+}
+
+
+.sprites__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sprites__container::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(images/sad_cat.jpg);
+    top: -25px;
+    left: 5px;
+    background-size: contain;
+    background-color: transparent;
+}
+
+.sprites_item {
+    height: 150px;
+    flex: 0 0 150px;
+    background-image: url(images/social-media.jpg);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.instagram {
+    background-position: -80px -250px;
+}
+
+.facebook {
+    background-position: -220px -250px;
+}
+
+.twitter {
+    background-position: -360px -250px;
+}
+
+.utube {
+    background-position: -500px -250px;
+}
+
+.linkedin {
+    background-position: -640px -250px;
+}
+
+@media (max-width:840px) {
+    .sprites_item {
+        height: 100px;
+        flex: 0 0 100px;
+        background-size: 549px;
+    }
+
+    .instagram {
+        background-position: -44px -155px;
+    }
+
+    .facebook {
+        background-position: -136px -155px;
+    }
+
+    .twitter {
+        background-position: -224px -155px;
+    }
+
+    .utube {
+        background-position: -313px -155px;
+    }
+
+    .linkedin {
+        background-position: -403px -155px;
+    }
+}
+
+
+@media (max-width:425px) {
+    .sprites_item {
+        height: 25px;
+        flex: 0 0 25px;
+        background-size: 150px;
+        background-position: -15px -45px;
+    }
+
+    .instagram {
+        background-position: -15px -45px;
+    }
+
+    .facebook {
+        background-position: -37px -45px;
+    }
+
+    .twitter {
+        background-position: -63px -45px;
+    }
+
+    .utube {
+        background-position: -88px -45px
+    }
+
+    .linkedin {
+        background-position: -111px -45px;
+    }
+}
