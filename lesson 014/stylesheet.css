@@ -278,3 +278,38 @@ a:hover {
         background-position: -111px -45px;
     }
 }
+
+/* ==================================================== */
+
+.popup {
+    margin-top: 15px;
+}
+
+.popup__container {
+    padding: 15px;
+}
+
+.popup_link {
+    position: relative;
+
+
+}
+
+.popup_link:hover {
+    color: purple;
+}
+
+.popup_body {
+    display: none;
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+}
+
+.popup_link:hover+.popup_body {
+    display: block;
+
+}
