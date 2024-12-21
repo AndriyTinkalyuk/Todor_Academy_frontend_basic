@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #1e3c72, #2a5298, #d53369);
+
+
+}
+
+.block {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(120deg, #f9c5d1, #9796f0);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: rotate(0deg) scale(1);
+    transition: width 1s ease-in-out .2s, height ease-in .2s, transform 2s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s;
+    padding: 10px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(120deg, #f33965, #3d3afc) 30;
+    opacity: 0.7;
+}
+
+
+.block:hover {
+    width: 350px;
+    height: 350px;
+    opacity: 1;
+}
+
+.clicked {
+    transform: rotate(360deg) scale(1.5);
+}

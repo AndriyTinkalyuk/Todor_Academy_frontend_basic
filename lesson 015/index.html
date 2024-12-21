@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 015</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="block" id="block" onclick="clickMe()">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum blanditiis dolorum laborum optio quas
+            molestiae alias qui eius iure? Commodi, ipsam! Qui molestiae a aliquid, cupiditate sapiente aperiam nihil
+            error?</p>
+        <p><b>Клікай на мене</b></p>
+    </div>
+</body>
+<script>
+
+    function clickMe() {
+        let element = document.getElementById('block');
+        element.classList.toggle('clicked');
+    }
+</script>
+
+</html>
