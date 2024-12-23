@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #1e3c72, #2a5298, #d53369);
+    flex-wrap: wrap;
+    gap: 110px;
+}
+
+.element {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(120deg, #f9c5d1, #9796f0);
+    transition: transform 1s ease-in-out .2s;
+    box-shadow: 5px 5px 30px white;
+    border: 1px solid white;
+}
+
+
+.element:first-child:hover {
+    transform: scale(2);
+}
+
+
+.element:nth-child(2):hover {
+    transform: rotate(-45deg);
+}
+
+.element:nth-child(3):hover {
+    transform: translate(100px, 50px);
+}
+
+
+/* тут питання, чому не працює :last-child замість :last-of-type */
+.element:last-of-type:hover {
+    transform: skew(20deg, 30deg);
+}
