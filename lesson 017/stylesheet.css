@@ -1,0 +1,142 @@
+body {
+    height: 100%;
+    background: linear-gradient(120deg, #1e3c72, #2a5298, #d53369);
+}
+
+
+@keyframes animationText {
+    0% {
+        color: #ff7e5f;
+    }
+
+    50% {
+        color: #feb47b;
+    }
+
+    100% {
+        color: #fd5e53;
+    }
+
+
+}
+
+
+@keyframes animationOpacity {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes animationLoader {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes animationScale {
+    from {
+        height: 100px;
+        width: 100px;
+    }
+
+    to {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+
+@keyframes animationCircle {
+    from {
+        transform: translateX(90vw);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+.text {
+    animation: animationText 3s ease-in-out 0s infinite alternate none;
+    background-color: #00000059;
+    padding: 20px;
+}
+
+.block {
+    margin-top: 20px;
+    padding: 50px;
+    background-color: #00000059;
+    animation: animationOpacity 2s ease-in-out 0s infinite alternate none;
+
+}
+
+
+.loader {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #00000059;
+}
+
+.loader_element {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right,
+            #ff0099,
+            #493240,
+            #24c6dc,
+            #12c2e9);
+    position: relative;
+}
+
+.loader_element::after {
+    content: '';
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #ff0099;
+    position: absolute;
+    top: -100px;
+    left: 50px;
+    transform-origin: 50% 200px;
+    animation: animationLoader 5s ease 0.5s infinite normal none;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    height: 300px;
+}
+
+
+.element {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(120deg, #f9c5d1, #9796f0);
+    animation: animationScale 4s ease-in-out 0s infinite alternate none;
+}
+
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: animationCircle 6s ease 0.2s infinite alternate-reverse none;
+    background-color: #fff;
+}
