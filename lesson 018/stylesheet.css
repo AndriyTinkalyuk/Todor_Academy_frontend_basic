@@ -62,5 +62,5 @@ img {
 .box:nth-child(3):hover .box_body {
     transform: scale(1.2);
     color: white;
-    backdrop-filter: grayscale(1) contrast(2) blur(0px);
+    backdrop-filter: grayscale(1) contrast(5) blur(0px);
 }
