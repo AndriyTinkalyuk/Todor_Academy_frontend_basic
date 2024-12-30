@@ -1,0 +1,66 @@
+html,
+body {
+    height: 100%;
+}
+
+img {
+    vertical-align: top;
+    height: inherit;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.334);
+    transition: filter 0.5s ease-in-out .1s, transform 0.7s ease-in-out .1s, box-shadow 0.5s ease-out .1s;
+
+}
+
+.box_body {
+    background-color: rgba(0, 0, 0, 0.434);
+    backdrop-filter: grayscale(1) contrast(3) blur(1px);
+    color: aliceblue;
+    width: 80%;
+    transition: backdrop-filter 0.5s ease .1s, transform 0.7s ease-in-out .1s;
+
+}
+
+.box:nth-child(1),
+.box:nth-child(2) {
+    filter: brightness(1.1) blur(1px) saturate(1.1);
+}
+
+
+.box:nth-child(1):hover,
+.box:nth-child(2):hover,
+.box:nth-child(3):hover {
+    filter: brightness(1) blur(0) saturate(1);
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.box:nth-child(3) {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6a9WZUvXsWYJW0uYjjseIPsmGaKyi3lHGw&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box:nth-child(3):hover .box_body {
+    transform: scale(1.2);
+    color: white;
+    backdrop-filter: grayscale(1) contrast(2) blur(0px);
+}
