@@ -203,6 +203,7 @@ a {
 
 .intro_button {
     margin-top: 10px;
+    float: right;
 }
 
 .intro_button button {
