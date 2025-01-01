@@ -1,0 +1,99 @@
+html,
+body {
+    min-height: 200vh;
+    height: 100%;
+    width: 100%;
+    font-family: monospace;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.wrapper {
+    height: inherit;
+    width: inherit;
+}
+
+
+.positions {
+    height: 500px;
+}
+
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+    top: 0;
+    left: 200px;
+    width: 200px;
+}
+
+.positions_container {
+    position: relative;
+    border: 1px solid black;
+    height: 350px;
+
+}
+
+.absolute {
+    position: absolute;
+    top: 10px;
+    left: 70%;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+.floats {}
+
+.float {
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_left,
+.float_right {
+    min-width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom right, blue, red);
+}
+
+.float_text {}
+
+.float_right {
+    float: right;
+
+}
+
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.clearnext {
+    clear: both;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+}
