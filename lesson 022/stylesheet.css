@@ -42,7 +42,7 @@ body {
     flex-shrink: 0;
     flex-basis: 300px;
 
-    flex: 1 0 300px;
+    /* flex: 1 0 300px; */
 }
 
 @media (max-width: 600px) {
