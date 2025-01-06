@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: monospace;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(23, 23, 23);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 10px rgb(47, 206, 250);
+}
+
+/* ----------------------------- */
+
+[class*=__container] {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 5px 15px;
+}
+
+.wrapper {
+    display: grid;
+    height: inherit;
+    grid-template-rows: 100px 1fr 150px;
+    grid-template-columns: 20% 1fr 1fr;
+    grid-template-areas:
+        'aside header header'
+        'aside main main'
+        'aside footer footer';
+}
+
+.header {
+    grid-area: header;
+    max-height: 80px;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(22, 22, 22);
+}
+
+
+.header__container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    box-shadow: 0px 2px 10px black;
+    height: 100%;
+}
+
+.header_logo {
+    height: 70px;
+    aspect-ratio: 1/1;
+    background-color: #000000;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+}
+
+.header_nav {}
+
+.header_ul {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.header_link:hover {
+    transform: scale(1.2);
+}
+
+
+
+.aside {
+    background-color: rgba(250, 253, 255, 0.747);
+    box-shadow: 5px 0px 5px rgba(54, 54, 54, 0.066);
+}
+
+.adv {
+    width: 100%;
+    height: 300px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+.adv_image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+.intro {}
+
+.intro__container {
+    box-shadow: 2px 2px 10px black;
+}
+
+.intro_text {}
+
+.intro_image {
+    /* чому мій float не працює? тобто текст не обтікає цей блок */
+    float: right;
+    height: 200px;
+    width: 200px;
+}
+
+.intro_image img {
+    height: 200px;
+    width: 200px;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+
+
+.task2 {
+    margin-top: 20px;
+}
+
+.task2__container {
+    display: grid;
+    place-items: center;
+}
+
+.item {
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(to right bottom, red, blue);
+}
+
+
+@media (max-width: 768px) {
+    .adv {
+        position: relative;
+    }
+
+    .wrapper {
+        grid-template-rows: 100px 310px 1fr 150px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'header header'
+            'aside aside'
+            'main main'
+            'footer footer';
+    }
+
+}
