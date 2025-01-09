@@ -101,6 +101,7 @@ a:hover {
 .footer {
     grid-area: footer;
     background-color: rgb(22, 22, 22);
+    margin-top: 10px;
 }
 
 
@@ -165,13 +166,10 @@ a:hover {
 .intro_image {
     /* чому мій float не працює? тобто текст не обтікає цей блок */
     float: right;
-    height: 200px;
-    width: 200px;
 }
 
 .intro_image img {
-    height: 200px;
-    width: 200px;
+    width: 20vw;
 }
 
 .clearfix::after {
@@ -204,12 +202,12 @@ a:hover {
     }
 
     .wrapper {
-        grid-template-rows: 100px 310px 1fr 150px;
+        grid-template-rows: 100px 1fr 310px 150px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             'header header'
-            'aside aside'
             'main main'
+            'aside aside'
             'footer footer';
     }
 
