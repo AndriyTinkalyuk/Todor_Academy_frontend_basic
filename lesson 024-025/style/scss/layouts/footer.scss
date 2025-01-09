@@ -1,0 +1,116 @@
+@use '../utils/mixins.scss';
+
+.footer {
+
+    text-align: center;
+    margin-top: 20px;
+    // .footer_contact
+
+    &_contact {
+        flex: 1 1 30%;
+        min-width: 230px;
+    }
+
+
+    &_title {
+        @include mixins.adaptiv-font(38, 28);
+        margin-bottom: 10px;
+    }
+
+
+    &_contact_text {}
+
+
+    &_about {
+        flex: 1 1 40%;
+        min-width: 320px;
+    }
+
+
+    &_logo {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+
+    &_text {
+        @include mixins.adaptiv-font(18, 12)
+    }
+
+    // .footer_icons
+
+    &_icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    // .footer_icon
+
+    &_icon {
+        width: 60px;
+        height: 60px;
+        background-image: url(../../../icons/Follow.png);
+    }
+
+    // .footer_pages
+
+    &_pages {
+        flex: 1 1 30%;
+        min-width: 230px;
+    }
+
+    // .footer_pages
+
+    &_pages {}
+
+    // .footer_ul
+
+    &_ul {
+        margin-top: 5px;
+
+        &:first-child {
+            margin-top: 0px;
+        }
+    }
+
+    // .footer_li
+
+    &_li {}
+
+    // .footer_link
+
+    &_link {}
+
+    // .footer__container
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.instagram {}
+
+.facebook {
+    background-position: -76px, 0px;
+}
+
+.twitter {
+    background-position: -150px, 0px;
+}
+
+.pinterest {
+    background-position: -225px, 0px;
+}
+
+
+@media screen and (max-width: 830px) {
+    .footer__container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

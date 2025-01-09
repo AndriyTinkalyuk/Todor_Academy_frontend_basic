@@ -1,0 +1,109 @@
+@use '../utils/vars';
+@use '../utils/placeholders';
+@use 'sass:color';
+@use '../utils/mixins' as mixins;
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: vars.$primary-font-family;
+    font-size: vars.$base-font-size;
+    color: vars.$primary-color;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    font-family: vars.$secondary-font-family;
+}
+
+h2 {
+    @include mixins.adaptiv-font(50, 35);
+    font-weight: bolder;
+}
+
+h3 {
+    @include mixins.adaptiv-font(40, 30);
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: vars.$primary-color;
+}
+
+a:hover,
+a:focus {
+    color: color.adjust(vars.$primary-color, $lightness: 15%);
+}
+
+button:hover,
+button:focus {
+    color: color.adjust(vars.$background-color, $lightness: 5%);
+    background-color: color.adjust(vars.$primary-color, $lightness: 5%);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
+}
+
+button {
+    cursor: pointer;
+}
+
+[class*=__container] {
+    @extend %container;
+    margin-top: vars.$block-margin;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
