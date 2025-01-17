@@ -1,0 +1,213 @@
+$headings-font-family :"Josefin Sans", serif;;
+$font-family-sans-serif: "Lato", serif;
+$link-color: #000000; 
+$link-hover-color: #494446;
+$accent-color: #FB2E86;
+$primary: #F2F0FF;
+$title-accent-color: #1c0472;
+
+
+section h2, .title-accent-color, h6 { 
+    color: $title-accent-color !important;
+}
+
+.mb-0{ 
+    margin-bottom: 0 !important;
+}
+
+.accent-color { 
+    color: $accent-color;
+}
+
+.bg-accent-color { 
+    background-color: $accent-color !important;
+    border: 1px solid $accent-color !important; 
+    &:hover { 
+        background-color: lighten($accent-color, 10%) !important;
+        border-color:lighten($accent-color, 10%) !important;
+    }
+    &:focus { 
+        background-color: lighten($accent-color, 10%) !important;
+        border-color:lighten($accent-color, 10%) !important;
+    }
+    &:active{
+        background-color: lighten($accent-color, 15%) !important;
+        border-color:lighten($accent-color, 15%) !important;
+    }
+}
+
+
+.feature-card { 
+    flex: 0 1 calc(25% - 0.5rem) !important;
+    min-width: 310px !important;
+}
+
+
+
+.card-img { 
+    height: 230px;
+    overflow: hidden;
+}
+
+.flex-33 { 
+    flex: 0 1 calc(33.333% - 0.5rem) !important;
+}
+
+.flex-25 { 
+    flex: 0 1 calc(25% - 1rem) !important;
+}
+
+.border-none {  
+    border: none !important;
+}
+
+.nav-link{
+    transition: transform .2s ease .1s;
+
+&.active {
+    color: $accent-color !important;
+    text-decoration: underline !important;
+    transform: scale(1.2) !important;
+}
+}
+
+.scale { 
+    transition: transform .2s ease .3s;
+    &:hover { 
+        transform: scale(1.02);
+    }
+}
+
+.hover-shadow:hover { 
+    box-shadow: 2px 2px 5px black;
+}
+
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+.tabs { 
+    min-height: 360px !important; 
+}
+
+.card .card-button{
+    color: white !important;
+    transition: opacity 0.2s ease-in-out .2s, transform .3s ease-in-out .2s;
+    transform: translateY(20px);
+    bottom: -2px;
+    left: center;
+    border: none !important;
+    border-radius: 5px;
+    &:hover { 
+        background-color: lighten($success, 10%) !important;
+    }
+}
+.card:hover .card-button, .card:focus .card-button, .card:active .card-button{ 
+    opacity: 1 !important;
+    z-index: 1;
+    transform: translateY(0px);
+}
+
+.card-tools {
+    margin-left: 10px;
+}
+
+.card-tools.flex-column {
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 10px;
+
+}
+
+.card-tools-button{
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color: transparent !important;
+    border: none;
+    &:hover{
+        transform: scale(1.5);
+        background-color: lighten($accent-color, 40%) !important;
+        border-radius: 50%;
+    }
+}
+
+.card-text s {
+    margin-left: 5px;
+}
+
+
+.sale::after {
+    display: block;
+    content: 'Sale';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #3b4d99; 
+    color: white;
+    font-size: 14px; 
+    font-weight: bold;
+    padding: 5px 15px; 
+    transform: rotate(-15deg); 
+    border-radius: 10px; 
+}
+
+.nav-left { 
+    flex-direction: row;
+}
+
+
+.card-icon {
+    width: 65px;
+    aspect-ratio: 1/1;
+    background-image: url(../../icons/offers.png);
+    background-repeat: no-repeat;
+ }
+
+ .icon-1 {
+    background-position: -295px 0px;
+ }
+ .icon-2 {
+    background-position: -595px 0px
+ }
+
+ .icon-3 {
+    background-position: -895px 0px;
+ }
+
+ .card-offer { 
+    min-width: 310px;
+ }
+
+
+ .content, .form {
+    flex: 1 0 calc(50% - 1.5rem);
+    min-width: 310px;
+ }
+ .no-resize {
+    resize: none;
+  }
+
+  .color-white { 
+    color: white !important;
+  }
+
+
+  .subscribe {
+    max-height: 460px;
+    width: 100%;
+    background-image: url(../../images/png/subcribe_background.png);
+    aspect-ratio: 16/9;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  .flex-16 { 
+    flex: 0 1 calc(22% - 1rem);
+    min-width: 175px;
+  }
+
+  .pl-0 li a { 
+    padding-left: 0 !important;
+  }
