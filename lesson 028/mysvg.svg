@@ -1,0 +1,30 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" style="background-color: #87CEEB;">
+    <!-- Сонце -->
+    <circle cx="50" cy="50" r="30" fill="yellow" />
+
+    <!-- Промені сонця -->
+    <path
+        d="M50 10 L50 0 M10 50 L0 50 M50 90 L50 100 M90 50 L100 50 M20 20 L10 10 M80 80 L90 90 M20 80 L10 90 M80 20 L90 10"
+        stroke="yellow" stroke-width="2" fill="none" />
+
+    <!-- Земля -->
+    <rect x="0" y="150" width="300" height="50" fill="#32CD32" />
+
+    <!-- Будинок -->
+    <rect x="100" y="100" width="100" height="50" fill="#8B0000" />
+    <polygon points="100,100 150,70 200,100" fill="#A52A2A" />
+
+    <!-- Вікно ліворуч -->
+    <rect x="110" y="110" width="20" height="20" fill="white" stroke="black" />
+    <line x1="110" y1="120" x2="130" y2="120" stroke="black" />
+    <line x1="120" y1="110" x2="120" y2="130" stroke="black" />
+
+    <!-- Вікно праворуч -->
+    <rect x="170" y="110" width="20" height="20" fill="white" stroke="black" />
+    <line x1="170" y1="120" x2="190" y2="120" stroke="black" />
+    <line x1="180" y1="110" x2="180" y2="130" stroke="black" />
+
+    <!-- Двері -->
+    <rect x="140" y="120" width="20" height="30" fill="#654321" />
+    <path d="M140 120 Q150 110 160 120" stroke="#8B4513" fill="none" stroke-width="2" />
+</svg>
