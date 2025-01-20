@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 029</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="welcome">
+        <div class="welcome__container">
+            <div class="welcome_content">
+                <svg width="270" height="460" viewBox="0 0 270 460" fill="none" xmlns="http://www.w3.org/2000/svg" class="draw">
+                    <path d="M11.0488 347.999H135.002H258.955" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M39.0547 401.879L135.003 401.879L230.951 401.879" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M131.445 8.14038L131.445 66.7824L131.445 125.424" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M131.975 119.427V340.856" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M210.579 33.7146L131.975 126.572" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M240.812 69.4293L131.975 198.001" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M258.951 126.57L131.975 269.427" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M264.998 190.857L131.975 348" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M264.999 262.286L192.441 348" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M5 262.286L77.5579 348" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M59.418 33.7146L131.976 126.572" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M29.1797 69.4293L131.97 198.001" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M11.0488 119.427L131.979 269.427" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M5 183.714L131.976 340.857" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    <path d="M135 455.142C63.21 455.142 5 384.334 5 296.971V163.313C5 75.9664 63.21 5.14209 135 5.14209C206.802 5.14209 264.999 75.9664 264.999 163.313V296.971C265.012 384.334 206.802 455.142 135 455.142Z" stroke="#7EB693" stroke-width="9" stroke-miterlimit="10"/>
+                    </svg>   
+            </div>
+        </div>
+    </div>
+        <div class="wrapper">
+            <div class="map">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="500" height="500">
+                <path  id="motionPath"
+                  d="M747 296L718 325L688 314L662 324L659 354L644 364L615 361L602 348L576 344L557 326L532 335L506 322L502 302L476 307L463 322L460 344L431 346L414 331L380 349L366 369L338 358L334 384L320 392L326 423L311 438L283 420L266 430L271 453L248 468L255 483L236 509L239 533L259 533L288 554L290 575L277 588L277 602L290 622L286 648L302 659L286 689L316 683L339 700L346 727L319 747L324 774L319 806L337 826L319 841L314 867L333 874L346 862L374 865L381 850L401 850L424 834L420 815L430 805L476 810L478 830L489 841L508 837L526 844L531 834L562 826L568 810L554 787L560 759L549 742L563 736L554 713L573 698L608 702L625 717L648 712L662 693L678 690L695 711L709 717L717 703L728 706L750 698L757 683L777 674L765 649L772 639L750 627L738 614L757 600L745 590L745 576L763 556L736 520L742 509L769 511L777 520L810 517L818 504L834 509L856 493L866 471L857 460L869 454L872 434L852 422L842 403L852 392L847 364L830 348L826 327L805 319L784 296L770 289L747 296Z"
+                  fill="none" 
+                  stroke="black" 
+                  stroke-width="2"
+                />
+                <circle cx="0" cy="0" r="5" fill="red">
+                    <animateMotion dur="60s" repeatCount="indefinite">
+                      <mpath xlink:href="#motionPath"/>
+                    </animateMotion>
+                  </circle>
+              </svg>
+            </div>
+              <div class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+
+                    <circle cx="100" cy="100" r="30" fill="red">
+         
+                      <animate 
+                        attributeName="cx" 
+                        from="100" 
+                        to="400" 
+                        dur="5s" 
+                        repeatCount="indefinite" />
+
+                      <animate 
+                        attributeName="cy" 
+                        from="100" 
+                        to="400" 
+                        dur="5s" 
+                        repeatCount="indefinite" />
+     
+                      <animate 
+                        attributeName="r" 
+                        from="30" 
+                        to="60" 
+                        dur="5s" 
+                        repeatCount="indefinite" />
+                    </circle>
+                  </svg>
+                  
+              </div>
+            </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
