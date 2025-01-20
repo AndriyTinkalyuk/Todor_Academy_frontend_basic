@@ -4,13 +4,17 @@
 @use '../utils/functions' as functions;
 @use 'sass:color';
 
+body { 
+    overflow: hidden;
+}
+
 .logo {
     @extend %flex-space-between;
     font-size: functions.to-rem(38);
 }
 
 body.lock {
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .intro {
