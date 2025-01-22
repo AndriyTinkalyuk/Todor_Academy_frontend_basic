@@ -1,0 +1,54 @@
+body.htm {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.photo {
+  flex: 0 1 calc(33% - 20px);
+  position: relative;
+  height: 30lvh;
+  min-width: 250px;
+}
+.photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.photo_container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 30px;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.icon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease 0.1s;
+}
+.icon img:hover {
+  transform: scale(1.1);
+}
+.icon_container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
